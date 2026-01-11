@@ -9,8 +9,8 @@ env:
 jobs:
   test:
     env: 
-      MONGO_CLUSTER_ADDRESS: cluster0.yusbgi2.mongodb.net
-      MONGO_USERNAME: yuvalhashmonay_db_user
+      MONGODB_CLUSTER_ADDRESS: cluster0.yusbgi2.mongodb.net
+      MONGODB_USERNAME: yuvalhashmonay_db_user
       MONGODB_PASSWORD: cyOiIzKgurcrurtD
       PORT: 8080
     environment: testing
@@ -40,4 +40,10 @@ jobs:
         run: |        
           echo "MONGODB_USERNAME: ${{ env.MONGO_USERNAME }}
           echo "MONGODB_DB_NAME: $MONGOD_DB_NAME"
+
+
+
+          
+
+
 
