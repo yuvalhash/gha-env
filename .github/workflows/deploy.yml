@@ -30,7 +30,8 @@ jobs:
       - name: Run tests
         run: npm test
       - name: Output information
-        run: echo "${{ env.MONGO_USERNAME }}"
+        run: |
+           echo "${{ env.MONGO_USERNAME }}"
   deploy:
     needs: test
     runs-on: ubuntu-latest
